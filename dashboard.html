@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>codedXchange Dashboard</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <nav>
+
 <h2>codedXchange</h2>
+
 <button onclick="logout()">Logout</button>
+
 </nav>
 
 <div class="container">
 
+<div class="grid">
+
 <div class="card">
-<h3>User Info</h3>
+
+<h3>Your Wallet</h3>
+
+<p>Balance: ₦<span id="balance">0</span></p>
+
 <p id="userEmail"></p>
+
 </div>
 
 <div class="card">
+
+<h3>Live Rates</h3>
+
+<ul>
+
+<li>Amazon $1 = ₦1500</li>
+<li>iTunes $1 = ₦1450</li>
+<li>Google Play $1 = ₦1400</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
 <h3>Submit Gift Card</h3>
 
 <select id="cardType">
+
 <option>Amazon</option>
 <option>iTunes</option>
 <option>Google Play</option>
+
 </select>
 
-<input type="number" id="amount" placeholder="Amount">
+<input type="number" id="amount" placeholder="Card Amount">
 
 <textarea id="cardCode" placeholder="Card Code"></textarea>
 
@@ -37,8 +72,11 @@
 </div>
 
 <div class="card">
+
 <h3>Transactions</h3>
+
 <ul id="transactions"></ul>
+
 </div>
 
 </div>
@@ -51,4 +89,5 @@
 <script src="app.js"></script>
 
 </body>
+
 </html>
